@@ -1,0 +1,84 @@
+body {
+  background: #f7f5eb; /* Light cream background */
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+}
+
+.hero-title {
+  text-align: center;
+  padding: 60px 0 30px 0;
+}
+
+.subtitle {
+  display: block;
+  font-size: 1.2rem;
+  color: #3d3a29;
+  font-family: 'Georgia', serif;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: 0.1em;
+  color: #3d3a29;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.1;
+}
+
+  
+.main-nav {
+    background: #fcfaef; /* Soft cream background */
+    padding: 20px 0 18px 0; /* Top and bottom padding for spacing */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03); /* Very subtle shadow */
+  }
+  
+  .main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 120px; /* Space between items */
+    list-style: none;
+    margin: 10;
+    padding: 0;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #3d3a29;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    transition: color 0.2s;
+  }
+  
+  .main-nav a:hover {
+    color: #a89c6e; /* Optional: subtle hover effect */
+  }
+  
+  .hero-section {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background-image: url('images/background.jpg'); /* Replace with your image path */
+    background-size: cover;      /* Cover entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;         /* Vertically center content */
+    justify-content: center;     /* Horizontally center content */
+    color: white;                /* Text color on image */
+    text-shadow: 0 0 5px rgba(0,0,0,0.7); /* Optional shadow for readability */
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  
+/* Optional: Import a high-contrast serif font for extra style */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
