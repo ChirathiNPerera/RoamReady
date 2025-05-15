@@ -1,10 +1,44 @@
 body {
   background: #f7f5eb; /* Light cream background */
   background-image: url('images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;  
   margin: 0;
   padding: 0;
+  height: 100%;
   line-height: 1.7;
   font-family: 'Inter', Arial, sans-serif;
+}
+
+#pictures{
+  width: 100%;
+  height: 100%;
+  position: center;
+}
+
+/* Slideshow container */
+.slideshow {
+  max-width: 700px;
+  position: relative;
+  margin: 40px auto 30px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Hide all images by default */
+.mySlides {
+  display: none;
+  width: 100%;
+  border-radius: 8px;
+  animation: fade 1.2s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
 }
 
 .hero-title {
@@ -29,6 +63,15 @@ h1 {
   color: #3d3a29;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  padding: 32px 20px 60px 20px;
+  background: rgba(252, 250, 239, 0.97);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
 /* Navigation bar */
@@ -145,16 +188,6 @@ nav.main-nav li a:focus {
   margin-bottom: 14px;
 }
 
-
-.container {
-  max-width: 800px;
-  margin: 40px auto 0 auto;
-  padding: 32px 20px 60px 20px;
-  background: rgba(252, 250, 239, 0.97);
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-}
-
 .text {
   font-size: 1.13rem;
   color: #4a4732;
@@ -187,6 +220,42 @@ nav.main-nav li a:focus {
     .text, .facts {
       font-size: 1rem;
     }
+}
+
+.intro {
+  font-size: 1.13rem;
+  color: #4a4732;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.places-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.places-list li {
+  background: #f7f5eb;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+}
+.places-list strong {
+  color: #a89c6e;
+  font-size: 1.08rem;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 16px 5px 25px 5px;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  .intro, .places-list li {
+    font-size: 1rem;
+    padding: 12px 8px;
+  }
 }
 
 
