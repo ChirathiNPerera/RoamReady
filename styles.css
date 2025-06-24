@@ -1,6 +1,6 @@
 body {
-  background: #f7f5eb; /* Light cream background */
-  background-image: url('images/background.jpg');
+  background: #B8FAC5; 
+/*background-image: url('images/background.jpg');*/
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;  
@@ -226,6 +226,7 @@ nav.main-nav li a:focus {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .places-list {
   list-style: none;
   padding: 0;
@@ -255,6 +256,7 @@ nav.main-nav li a:focus {
     padding: 12px 8px;
   }
 }
+
 
 /** changing the image size **/
 #pictures{
