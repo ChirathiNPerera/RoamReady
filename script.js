@@ -57,3 +57,20 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize the map
+  const map = L.map("map").setView([7.8731, 80.7718], 7); // center: Sri Lanka
+
+  // Tile layer
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Marker example: Sigiriya Rock
+  L.marker([7.9570, 80.7603])
+    .addTo(map)
+    .bindPopup("🗿 Sigiriya Rock Fortress")
+    .openPopup();
+});
